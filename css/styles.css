@@ -1,0 +1,188 @@
+html,
+body {
+  height: 100vh;
+  display: block;
+}
+body {
+  background: url(../assets/desk.jpg) no-repeat top right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+.header,
+.wrap {
+  transition: left 0.2s;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  z-index: 10;
+  background-color: #7D1A1D;
+  height: 100px;
+  width: 500px;
+  color: #fefefe;
+  padding: 0 30px;
+}
+.header .name-title {
+  width: 60%;
+  float: left;
+  padding: 30px 0 0 0;
+}
+.header .name-title h1 {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 0 1px;
+}
+.header .name-title h1 span {
+  font-weight: 300;
+  opacity: 0.6;
+}
+.header .nav-icons {
+  width: 40%;
+  float: left;
+  text-align: right;
+  padding: 22px 0 0 0;
+  display: inline-block;
+}
+.header .nav-icons .fa {
+  color: #fefefe;
+  z-index: 999;
+  padding: 10px 5px 5px 5px;
+}
+.header .nav-icons .fa:after {
+  content: "";
+  z-index: -999;
+  position: absolute;
+  width: 300px;
+  margin-top: 45px;
+  color: #fff;
+  font-size: 0.5em;
+}
+.header .nav-icons .fa-linkedin-square:hover {
+  color: #1583BB;
+}
+.header .nav-icons .fa-linkedin-square:hover:after {
+  content: 'Check me out in Linkedin!';
+  left: -160px;
+}
+.header .nav-icons .fa-github-alt:hover {
+  color: #000;
+}
+.header .nav-icons .fa-github-alt:hover:after {
+  content: 'Check my stuffs in Github!';
+  margin-left: -233px;
+}
+.header .nav-icons .fa-envelope:hover {
+  color: #FF8000;
+}
+.header .nav-icons .fa-envelope:hover:after {
+  content: 'Send me an email!';
+  margin-left: -290px;
+}
+.header a {
+  z-index: 999;
+  color: #fefefe;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #b2b2b2;
+}
+.wrap {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 100px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fefefe;
+  max-width: 560px;
+  min-height: 100%;
+}
+.wrap .content {
+  padding: 16vh 30px 5vh 30px;
+}
+.wrap .content hr {
+  border-color: #7D1A1D;
+  margin-bottom: 30px;
+}
+.wrap .content h1 {
+  color: #FFEBCD;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+.wrap .content p {
+  color: #FFEBCD;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.wrap .content a {
+  text-decoration: none;
+  color: #7D1A1D;
+}
+.wrap .content a:hover {
+  color: #d12c31;
+}
+.wrap .content .footer {
+  color: #696969;
+  margin-top: 60px;
+  text-align: center;
+}
+.wrap .content .tiny {
+  margin: 0 auto;
+  margin-top: -15px;
+  font-size: 70%;
+  width: 50%;
+  border-top: 1px solid;
+}
+@media (max-width: 675px) {
+  .header,
+  .wrap {
+    left: 0;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    height: 155px;
+    width: 90%;
+    min-width: 275px;
+  }
+  .header .name-title {
+    float: left;
+    width: 40%;
+  }
+  .header .name-title h1 {
+    font-size: 42px;
+  }
+  .header .nav-icons {
+    width: 45px;
+    padding: 11px 0 0 0;
+    margin: 0px 20px;
+    float: right;
+    text-align: center;
+  }
+  .header .nav-icons .fa {
+    padding: 5px !important;
+  }
+  .header .nav-icons .fa:after {
+    display: none;
+    content: "";
+  }
+  .wrap {
+    min-width: 300px;
+  }
+  .wrap .content {
+    padding: 25vh 30px 5vh 30px;
+  }
+  .wrap .content .tiny {
+    width: 75%;
+  }
+}

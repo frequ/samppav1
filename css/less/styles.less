@@ -1,0 +1,233 @@
+//out: ../styles.css
+
+html, body{
+    height: 100vh;
+    display: block;
+}
+body{
+
+    background: url(../assets/desk.jpg) no-repeat top right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+.header, .wrap{
+    transition: left 0.2s;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 100px;
+    z-index: 10;
+    background-color: #7D1A1D;
+    height: 100px;
+    width: 500px;
+    color: #fefefe;
+    padding: 0 30px;
+
+
+    .name-title{
+        width: 60%;
+        float: left;
+        padding: 30px 0 0 0;
+
+        h1{
+            margin: 0;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+            opacity: 0.8;
+            text-shadow: rgba(0,0,0,.2) 0 0 1px;
+
+            span{
+                font-weight: 300;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .nav-icons{
+        width: 40%;
+        float: left;
+        text-align: right;
+        padding: 22px 0 0 0;
+        display: inline-block;
+
+        .fa{
+            color: #fefefe;
+            // color: #7D1A1D;
+            z-index: 999;
+            // display: inline-block;
+            padding: 10px 5px 5px 5px;
+            &:after{
+                content: "";
+                z-index: -999;
+                position: absolute;
+                width: 300px;
+                margin-top: 45px;
+                color: #fff;
+                font-size: 0.5em;
+            }
+        }
+
+        .fa-linkedin-square:hover{
+            color: #1583BB;
+
+            &:after{
+                content: 'Check me out in Linkedin!';
+                left: -160px;
+            }
+
+        }
+
+        .fa-github-alt:hover{
+            color: #000;
+            &:after{
+                content: 'Check my stuffs in Github!';
+                margin-left: -233px;
+            }
+        }
+
+        .fa-envelope:hover{
+            color: #FF8000;
+            &:after{
+                content: 'Send me an email!';
+                margin-left: -290px;
+            }
+        }
+
+    }
+
+    a{
+        z-index: 999;
+        color: #fefefe;
+        text-decoration: none;
+        &:hover{
+            color: darken(#fefefe, 30%);
+        }
+    }
+
+}
+
+
+.wrap{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 100px;
+    background-color: rgba(0,0,0,.85);
+    color: #fefefe;
+    max-width: 560px;
+    min-height: 100%;
+
+    .content{
+        padding: 16vh 30px 5vh 30px;
+
+        hr{
+            border-color: #7D1A1D;
+            margin-bottom: 30px;
+        }
+
+        h1{
+            color: #FFEBCD;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            color: #FFEBCD;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #7D1A1D;
+            &:hover{
+                color: lighten(#7D1A1D, 20%);
+            }
+        }
+
+
+        .footer{
+            color: #696969;
+            margin-top: 60px;
+            text-align: center;
+
+        }
+
+        .tiny{
+            margin: 0 auto;
+            margin-top: -15px;
+            font-size: 70%;
+            width: 50%;
+            border-top: 1px solid;
+        }
+
+
+    }
+
+
+}
+
+@media (max-width: 675px){
+    .header, .wrap{
+        left: 0;
+    }
+}
+
+@media (max-width: 550px){
+    .header{
+        height: 155px;
+        width: 90%;
+        min-width: 275px;
+
+        .name-title{
+            float: left;
+            width: 40%;
+
+            h1{
+                font-size: 42px;
+            }
+        }
+
+        .nav-icons{
+            width: 45px;
+            padding: 11px 0 0 0;
+            margin: 0px 20px;
+            float: right;
+            text-align: center;
+
+            .fa{
+                padding: 5px !important;
+
+                &:after{
+                    display: none;
+                    content: "";
+                }
+            }
+        }
+
+    }
+
+    .wrap{
+        min-width: 300px;
+        .content{
+            padding: 25vh 30px 5vh 30px;
+
+            .tiny{
+                width: 75%;
+            }
+        }
+    }
+
+
+}
