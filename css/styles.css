@@ -105,6 +105,9 @@ body {
 .wrap .content {
   padding: 16vh 30px 5vh 30px;
 }
+.wrap .content .responsive-line {
+  display: block;
+}
 .wrap .content hr {
   border-color: #7D1A1D;
   margin-bottom: 30px;
@@ -181,6 +184,9 @@ body {
   }
   .wrap .content {
     padding: 25vh 30px 5vh 30px;
+  }
+  .wrap .content .responsive-line {
+    display: inline;
   }
   .wrap .content .tiny {
     width: 75%;
