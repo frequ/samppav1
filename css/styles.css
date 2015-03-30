@@ -153,6 +153,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  body {
+    background-repeat: repeat-y;
+  }
   .header {
     height: 155px;
     width: 90%;
@@ -181,6 +184,7 @@ body {
   }
   .wrap {
     min-width: 300px;
+    width: 100%;
   }
   .wrap .content {
     padding: 25vh 30px 5vh 30px;
@@ -190,5 +194,10 @@ body {
   }
   .wrap .content .tiny {
     width: 75%;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .wrap .content {
+    padding-top: 35vh;
   }
 }
