@@ -103,7 +103,7 @@ body {
   min-height: 100%;
 }
 .wrap .content {
-  padding: 16vh 30px 5vh 30px;
+  padding: 125px 30px 5vh 30px;
 }
 .wrap .content .responsive-line {
   display: block;
@@ -187,7 +187,7 @@ body {
     width: 100%;
   }
   .wrap .content {
-    padding: 25vh 30px 5vh 30px;
+    padding: 170px 30px 5vh 30px;
   }
   .wrap .content .responsive-line {
     display: inline;
